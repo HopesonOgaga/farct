@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "./nav";
 
 export default function Header() {
   return (
@@ -6,7 +7,7 @@ export default function Header() {
       <div className="flex items-center justify-between container mx-auto max-w-7xl">
         {/* Navigation */}
         <nav>
-          <ul className="flex gap-6 text-sm font-medium uppercase tracking-wide">
+          <ul className="flex gap-6 text-base capitalize tracking-wide">
             <li>
               <a href="/womens" className="hover:text-green-600 transition-colors">Womens Wear</a>
             </li>
@@ -41,6 +42,7 @@ export default function Header() {
           </button>
         </div>
       </div>
+      <NavBar></NavBar>
     </header>
   );
 }
