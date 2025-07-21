@@ -7,6 +7,7 @@ import Items1 from "./components/products/items1";
 import ProductDetails from "./pages/productdatails";
 import MenHome from "./pages/men";
 import PersonalInfo from "./components/personalinfo";
+import BagContent from "./components/checkout/checkout";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/productdetails" element={<ProductDetails></ProductDetails>}></Route>
         <Route path="/menhome" element={<MenHome></MenHome>}></Route>
         <Route path="/info" element={<PersonalInfo></PersonalInfo>}></Route>
+        <Route path="/check" element={<BagContent></BagContent>}></Route>
       </Routes>
     </BrowserRouter>
   );
