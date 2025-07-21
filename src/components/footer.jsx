@@ -34,7 +34,7 @@ export default function FooterBar() {
           </ul>
 
           {/* Social Media Icons */}
-          <div className="flex flex-col gap-4 ">
+          {/* <div className="flex flex-col gap-4 ">
             <p className="font-medium mb-2">Follow us</p>
             <div className="flex gap-4 items-center">
                  <a href="#" target="_blank" rel="noopener noreferrer">
@@ -53,7 +53,7 @@ export default function FooterBar() {
                 <img src="/images/snapchat.png" alt="snapchat" className="w-6 h-6" />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

@@ -4,7 +4,7 @@ import NavBar from "./nav";
 export default function Header() {
   return (
     <header className="p-4">
-      <div className="flex items-center justify-between container mx-auto max-w-7xl">
+      <div className="flex items-center justify-between container mx-auto max-w-7xl hidden md:flex">
         {/* Navigation */}
         <nav>
           <ul className="flex gap-6 text-base capitalize tracking-wide">
@@ -14,9 +14,8 @@ export default function Header() {
             <li>
               <a href="/mens" className="hover:text-green-600 transition-colors">Mens Wear</a>
             </li>
-            <li>
-              <a href="/children" className="hover:text-green-600 transition-colors">Children Wear</a>
-            </li>
+            <li>furnitture </li>
+            <li>electronics</li>
           </ul>
         </nav>
 

@@ -5,6 +5,8 @@ import FooterBar from "./components/footer";
 import NavBar from "./components/nav";
 import Items1 from "./components/products/items1";
 import ProductDetails from "./pages/productdatails";
+import MenHome from "./pages/men";
+import PersonalInfo from "./components/personalinfo";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/nav" element={<NavBar></NavBar>}></Route>
         <Route path="/items" element={<Items1></Items1>}></Route>
         <Route path="/productdetails" element={<ProductDetails></ProductDetails>}></Route>
+        <Route path="/menhome" element={<MenHome></MenHome>}></Route>
+        <Route path="/info" element={<PersonalInfo></PersonalInfo>}></Route>
       </Routes>
     </BrowserRouter>
   );

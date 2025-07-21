@@ -3,10 +3,11 @@ import Header from "../components/header";
 import FooterBar from "../components/footer";
 import Items1 from "../components/products/items1";
 import InfoSection from "../components/info";
+import PersonalInfo from "../components/personalinfo";
 
 function Home() {
   return (
-    <section>
+    <section className=" ">
       <Header />
 
       {/* Hero Section */}
@@ -113,7 +114,7 @@ function Home() {
       <Items1></Items1>
 
       {/* elevate */}
-          <section className="w-full py-20 px-6 bg-white">
+      <section className="w-full py-20 px-6 bg-white">
         <div className="flex flex-col md:flex-row justify-evenly items-center max-w-7xl mx-auto">
           {/* Text */}
           <div className="flex flex-col items-center md:items-center gap-4 text-center md:text-left max-w-md">
@@ -142,6 +143,9 @@ function Home() {
       {/* information section */}
       <section>
         <InfoSection></InfoSection>
+      </section>
+      <section>
+        <PersonalInfo></PersonalInfo>
       </section>
       {/* Footer */}
       <FooterBar />
