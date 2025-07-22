@@ -7,7 +7,7 @@ import Items1 from "./components/products/items1";
 import ProductDetails from "./pages/productdatails";
 import MenHome from "./pages/men";
 import PersonalInfo from "./components/personalinfo";
-import BagContent from "./components/checkout/checkout";
+import BagContent from "./components/checkout/bagcontent";
 
 function App() {
   return (
