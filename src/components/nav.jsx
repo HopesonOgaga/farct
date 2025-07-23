@@ -18,14 +18,46 @@ export default function NavBar() {
           <li className="relative group cursor-pointer">
             <span className="hover:text-green-600">Sale</span>
           </li>
-          <li><a href="#" className="hover:text-green-600">New In</a></li>
-          <li><a href="#" className="hover:text-green-600">Vacation</a></li>
-          <li><a href="#" className="hover:text-green-600">Brands</a></li>
-          <li><a href="#" className="hover:text-green-600">Clothing</a></li>
-          <li><a href="#" className="hover:text-green-600">Shoes</a></li>
-          <li><a href="#" className="hover:text-green-600">Bags</a></li>
-          <li><a href="#" className="hover:text-green-600">Accessories</a></li>
-          <li><a href="#" className="hover:text-green-600">Homeware</a></li>
+          <li>
+            <a href="#" className="hover:text-green-600">
+              New In
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-green-600">
+              Vacation
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-green-600">
+              Brands
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-green-600">
+              Clothing
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-green-600">
+              Shoes
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-green-600">
+              Bags
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-green-600">
+              Accessories
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:text-green-600">
+              Homeware
+            </a>
+          </li>
         </ul>
 
         {/* Search */}
@@ -48,10 +80,18 @@ export default function NavBar() {
 
         <div className="flex items-center gap-3">
           <button>
-            <img src="/images/heart.png" alt="Favorites" className="w-6 h-6 hover:opacity-80" />
+            <img
+              src="/images/heart.png"
+              alt="Favorites"
+              className="w-6 h-6 hover:opacity-80"
+            />
           </button>
           <button>
-            <img src="/images/parcel.png" alt="Cart" className="w-6 h-6 hover:opacity-80" />
+            <img
+              src="/images/parcel.png"
+              alt="Cart"
+              className="w-6 h-6 hover:opacity-80"
+            />
           </button>
         </div>
       </div>
@@ -72,23 +112,94 @@ export default function NavBar() {
 
         {/* Main Nav Categories */}
         <div className="flex justify-around p-4 font-semibold capitalize border-b">
-          <Link to="/"><nav><a href="#" className="active:underline">Womenwear</a></nav></Link>
-          <Link to="/menhome"><nav><a href="#" className="active:underline">Menswear</a></nav></Link>
-          <nav><a href="#" className="active:underline">Electronics</a></nav>
+          <Link to="/">
+            <nav>
+              <a href="#" className="active:underline">
+                Womenwear
+              </a>
+            </nav>
+          </Link>
+          <Link to="/menhome">
+            <nav>
+              <a href="#" className="active:underline">
+                Menswear
+              </a>
+            </nav>
+          </Link>
+          <nav>
+            <a href="#" className="active:underline">
+              Electronics
+            </a>
+          </nav>
         </div>
 
         {/* Full Nav List */}
         <ul className="p-4 space-y-4 text-sm capitalize">
-          <li><a href="#" className="block hover:text-green-600">Sale</a></li>
-          <li><a href="#" className="block hover:text-green-600">New In</a></li>
-          <li><a href="#" className="block hover:text-green-600">Vacation</a></li>
-          <li><a href="#" className="block hover:text-green-600">Brands</a></li>
-          <li><a href="#" className="block hover:text-green-600">Clothing</a></li>
-          <li><a href="#" className="block hover:text-green-600">Shoes</a></li>
-          <li><a href="#" className="block hover:text-green-600">Bags</a></li>
-          <li><a href="#" className="block hover:text-green-600">Accessories</a></li>
-          <li><a href="#" className="block hover:text-green-600">Homeware</a></li>
+          <li>
+            <a href="#" className="block hover:text-green-600">
+              Sale
+            </a>
+          </li>
+          <li>
+            <a href="#" className="block hover:text-green-600">
+              New In
+            </a>
+          </li>
+          <li>
+            <a href="#" className="block hover:text-green-600">
+              Vacation
+            </a>
+          </li>
+          <li>
+            <a href="#" className="block hover:text-green-600">
+              Brands
+            </a>
+          </li>
+          <li>
+            <a href="#" className="block hover:text-green-600">
+              Clothing
+            </a>
+          </li>
+          <li>
+            <a href="#" className="block hover:text-green-600">
+              Shoes
+            </a>
+          </li>
+          <li>
+            <a href="#" className="block hover:text-green-600">
+              Bags
+            </a>
+          </li>
+          <li>
+            <a href="#" className="block hover:text-green-600">
+              Accessories
+            </a>
+          </li>
+          <li>
+            <a href="#" className="block hover:text-green-600">
+              Homeware
+            </a>
+          </li>
         </ul>
+        <div>
+          {/* style sing in nd login butons here tired  note this is mobile view */}
+          <div className="p-4 border-t mt-4">
+            <div className="flex flex-col gap-3">
+              <Link
+                to="/sign"
+                className="w-full text-center bg-black text-white py-2 rounded-md font-semibold hover:opacity-90 transition"
+              >
+                Sign In
+              </Link>
+              <Link
+                to="/login"
+                className="w-full text-center border border-black py-2 rounded-md font-semibold text-black hover:bg-gray-100 transition"
+              >
+                Log In
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Overlay */}

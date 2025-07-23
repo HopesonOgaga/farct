@@ -1,7 +1,9 @@
 import React from "react";
 import NavBar from "./nav";
+import { Link } from "react-router";
 
 export default function Header() {
+  // const [profile, setProfileIcon] = useState(false);
   return (
     <header className="p-4">
       <div className="flex items-center justify-between container mx-auto max-w-7xl hidden md:flex">
@@ -12,7 +14,7 @@ export default function Header() {
               <a href="/womens" className="hover:text-green-600 transition-colors">Womens Wear</a>
             </li>
             <li>
-              <a href="/mens" className="hover:text-green-600 transition-colors">Mens Wear</a>
+              <a href="/menhome" className="hover:text-green-600 transition-colors">Mens Wear</a>
             </li>
             <li>furnitture </li>
             <li>electronics</li>
@@ -28,17 +30,20 @@ export default function Header() {
         <div className="flex items-center gap-5">
           <span className="w-6 h-6 rounded-full bg-green-500" aria-hidden="true"></span>
           
-          <button aria-label="User Profile">
-            <img src="/images/user.png" alt="User profile" className="w-6 h-6 hover:opacity-80 transition-opacity" />
-          </button>
+          <Link to={"/sign"} className="hover:opacity-80 transition-opacity">  
+            <button aria-label="User Profile">
+              <img src="/images/user.png" alt="User profile" className="w-6 h-6 hover:opacity-80 transition-opacity" />
+            </button>
+          </Link>
           
           <button aria-label="Favorites">
             <img src="/images/heart.png" alt="Favorites" className="w-6 h-6 hover:opacity-80 transition-opacity" />
           </button>
           
+          <Link to={"/check"}>
           <button aria-label="Cart">
             <img src="/images/parcel.png" alt="Shopping cart" className="w-6 h-6 hover:opacity-80 transition-opacity" />
-          </button>
+          </button></Link>
         </div>
       </div>
       <NavBar></NavBar>

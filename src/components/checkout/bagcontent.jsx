@@ -2,6 +2,7 @@ import React from "react";
 import { X } from "lucide-react";
 import Header from "../header";
 import FooterBar from "../footer";
+import { Link } from "react-router";
 
 export default function BagContent() {
   return (
@@ -34,10 +35,16 @@ export default function BagContent() {
 
             <div className="space-y-1 text-sm text-gray-600 text-left">
               <p>
-                Size: 35 EU <span className="text-blue-600 cursor-pointer ml-1">Change</span>
+                Size: 35 EU{" "}
+                <span className="text-blue-600 cursor-pointer ml-1">
+                  Change
+                </span>
               </p>
               <p>
-                Quantity: 1 <span className="text-blue-600 cursor-pointer ml-1">Change</span>
+                Quantity: 1{" "}
+                <span className="text-blue-600 cursor-pointer ml-1">
+                  Change
+                </span>
               </p>
             </div>
 
@@ -68,9 +75,13 @@ export default function BagContent() {
             <span>$134.00</span>
           </div>
 
-          <button className="w-full bg-black text-white py-3 rounded-md hover:bg-gray-900 transition">
-            Go to Checkout
-          </button>
+          {/* temp linking  */}
+          <Link to={"/checkout"}>
+            {" "}
+            <button className="w-full bg-black text-white py-3 rounded-md hover:bg-gray-900 transition">
+              Go to Checkout
+            </button>
+          </Link>
         </div>
       </section>
       <FooterBar></FooterBar>
