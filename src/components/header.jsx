@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./nav";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
+
 
 export default function Header() {
   // const [profile, setProfileIcon] = useState(false);
@@ -43,7 +44,8 @@ export default function Header() {
           <Link to={"/check"}>
           <button aria-label="Cart">
             <img src="/images/parcel.png" alt="Shopping cart" className="w-6 h-6 hover:opacity-80 transition-opacity" />
-          </button></Link>
+          </button>
+          </Link>
         </div>
       </div>
       <NavBar></NavBar>

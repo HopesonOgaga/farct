@@ -86,6 +86,7 @@ export default function NavBar() {
               className="w-6 h-6 hover:opacity-80"
             />
           </button>
+         <Link to={"/check"}>
           <button>
             <img
               src="/images/parcel.png"
@@ -93,6 +94,7 @@ export default function NavBar() {
               className="w-6 h-6 hover:opacity-80"
             />
           </button>
+         </Link>
         </div>
       </div>
 
