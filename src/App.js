@@ -7,17 +7,17 @@ import Items1 from "./components/products/items1";
 import ProductDetails from "./pages/productdatails";
 import MenHome from "./pages/men";
 import PersonalInfo from "./components/personalinfo";
-import BagContent from "./components/checkout/bagcontent";
+import BagContent from "./components/checkout/cartcontent";
 import CheckoutItem from "./components/checkout/checkout";
 import SignIn from "./components/loginDetails/signin";
 import Login from "./components/loginDetails/login";
-import ItemsContent from "./components/checkout/bagcontent";
+import ItemsContent from "./components/checkout/cartcontent";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/" element={<Home></Home>}> </Route>
         <Route path="/header" element={<Header></Header>}></Route>
         <Route path="/footer" element={<FooterBar></FooterBar>}></Route>
         <Route path="/nav" element={<NavBar></NavBar>}></Route>

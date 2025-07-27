@@ -7,7 +7,8 @@ import { useNavigate } from "react-router-dom";
 
 function Items1({ items }) {
   const navigate = useNavigate();
-  const { addToCart } = useCart();
+  const { cart, addToCart, removeFromCart } = useCart();
+
 
   const handleClick = (item) => {
     navigate("/productdetails", { state: { product: item } });

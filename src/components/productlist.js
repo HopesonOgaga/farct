@@ -26,7 +26,7 @@ export const itemsGroup = [
     },
     {
       id: "maya-set",
-      images: ["/images/brownlady.webp", "/images/brownlady2.jpg"],
+      images: ["/images/brownlady.webp", "/images/brownlady.webp", "/images/brownlady.webp"],
       itemName: "Maya Set",
       itemInfo: "Brown summer fit",
       itemPrice: "$350",
@@ -42,7 +42,7 @@ export const itemsGroup = [
     },
     {
       id: "eva-dress",
-      images: ["/images/lady.jpg", "/images/lady2.jpg"],
+      images: ["/images/lady.jpg", "/images/lady.jpg","/images/lady.jpg"],
       itemName: "Eva Dress",
       itemInfo: "Floral linen gown",
       itemPrice: "$510",
@@ -58,7 +58,7 @@ export const itemsGroup = [
     },
     {
       id: "leather-briefcase",
-      images: ["/images/briefcase.jpg", "/images/briefcase-side.jpg"],
+      images: ["/images/briefcase.jpg", "/images/briefcase.jpg", "/images/briefcase.jpg"],
       itemName: "Leather Briefcase",
       itemInfo: "Sleek & professional",
       itemPrice: "$600",
@@ -80,7 +80,7 @@ export const itemsGroup = [
   [
     {
       id: "elevate-set",
-      images: ["/images/elevate.webp", "/images/elevate2.jpg"],
+      images: ["/images/elevate.webp","/images/elevate.webp", "/images/elevate.webp"],
       itemName: "Elevate Set",
       itemInfo: "Modern boho outfit",
       itemPrice: "$280",
