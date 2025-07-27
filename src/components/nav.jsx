@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useCart } from "../api/CartContext";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { cart } = useCart();
 
   function toggle() {
     setIsOpen(!isOpen);
@@ -86,15 +88,20 @@ export default function NavBar() {
               className="w-6 h-6 hover:opacity-80"
             />
           </button>
-         <Link to={"/check"}>
-          <button>
-            <img
-              src="/images/parcel.png"
-              alt="Cart"
-              className="w-6 h-6 hover:opacity-80"
-            />
-          </button>
-         </Link>
+          <Link to={"/check"} className="relative">
+            <button>
+              <img
+                src="/images/parcel.png"
+                alt="Cart"
+                className="w-6 h-6 hover:opacity-80"
+              />
+              {cart.length > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                  {cart.length}
+                </span>
+              )}
+            </button>
+          </Link>
         </div>
       </div>
 

@@ -11,6 +11,7 @@ import BagContent from "./components/checkout/bagcontent";
 import CheckoutItem from "./components/checkout/checkout";
 import SignIn from "./components/loginDetails/signin";
 import Login from "./components/loginDetails/login";
+import ItemsContent from "./components/checkout/bagcontent";
 
 function App() {
   return (
@@ -21,10 +22,12 @@ function App() {
         <Route path="/footer" element={<FooterBar></FooterBar>}></Route>
         <Route path="/nav" element={<NavBar></NavBar>}></Route>
         <Route path="/items" element={<Items1></Items1>}></Route>
+        {/* target */}
         <Route path="/productdetails" element={<ProductDetails></ProductDetails>}></Route>
+        {/* end */}
         <Route path="/menhome" element={<MenHome></MenHome>}></Route>
         <Route path="/info" element={<PersonalInfo></PersonalInfo>}></Route>
-        <Route path="/check" element={<BagContent></BagContent>}></Route>
+        <Route path="/check" element={<ItemsContent></ItemsContent>}></Route>
         <Route path="/checkout" element={<CheckoutItem></CheckoutItem>}></Route>
         <Route path="/sign" element={<SignIn></SignIn>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>

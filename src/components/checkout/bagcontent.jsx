@@ -4,7 +4,7 @@ import Header from "../header";
 import FooterBar from "../footer";
 import { Link } from "react-router";
 
-export default function BagContent() {
+export default function ItemsContent() {
   return (
     <section className="px-4 sm:px-6 py-8 max-w-7xl mx-auto">
       {/* Header */}

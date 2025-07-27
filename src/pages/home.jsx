@@ -4,6 +4,7 @@ import FooterBar from "../components/footer";
 import Items1 from "../components/products/items1";
 import InfoSection from "../components/info";
 import PersonalInfo from "../components/personalinfo";
+import { itemsGroup } from "../components/productlist";
 
 function Home() {
   return (
@@ -11,9 +12,8 @@ function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="w-full h-screen bg-white">
+      <section className="px-6 md:px-10 max-w-[1440px] mx-auto space-y-20">
         <div className="flex flex-col md:flex-row justify-evenly items-center h-full px-6">
-          {/* Text */}
           <div className="flex flex-col items-center md:items-center gap-6 text-center md:text-left max-w-md ">
             <p className="capitalize text-2xl font-medium">beach bohemian</p>
             <p className="text-xl capitalize text-gray-700 md:text-center">
@@ -24,8 +24,6 @@ function Home() {
               shop now
             </button>
           </div>
-
-          {/* Image */}
           <div className="w-full max-w-xl mt-8 md:mt-0">
             <img
               src="/images/homepagelady.jpeg"
@@ -46,13 +44,15 @@ function Home() {
             shop now
           </button>
         </div>
-        <Items1></Items1>
+      </section>
+      {/* section 1  */}
+      <section>
+        <Items1 items={itemsGroup[0]} />
       </section>
 
       {/* bag section */}
       <section className="w-full py-20 px-6 bg-white">
         <div className="flex flex-col md:flex-row justify-evenly items-center max-w-7xl mx-auto">
-          {/* Text */}
           <div className="flex flex-col items-center md:items-center gap-4 text-center md:text-left max-w-md">
             <p className="capitalize text-2xl font-medium">
               the summer collection
@@ -65,8 +65,6 @@ function Home() {
               shop eres
             </a>
           </div>
-
-          {/* Image */}
           <div className="w-full max-w-xl mt-8 md:mt-0">
             <img
               src="/images/multiplebags.webp"
@@ -77,16 +75,16 @@ function Home() {
         </div>
       </section>
 
-      {/* bags section will be changed */}
+      {/* Grouped Items */}
       <section>
-        <Items1></Items1>
-        <Items1></Items1>
+        {itemsGroup.map((group, index) => (
+          <Items1 key={index} items={group} />
+        ))}
       </section>
 
       {/* Summer Collection Section */}
       <section className="w-full py-20 px-6 bg-white">
         <div className="flex flex-col md:flex-row justify-evenly items-center max-w-7xl mx-auto">
-          {/* Text */}
           <div className="flex flex-col items-center md:items-center gap-4 text-center md:text-left max-w-md">
             <p className="capitalize text-2xl font-medium">
               the summer collection
@@ -99,8 +97,6 @@ function Home() {
               shop eres
             </a>
           </div>
-
-          {/* Image */}
           <div className="w-full max-w-xl mt-8 md:mt-0">
             <img
               src="/images/brownlady.webp"
@@ -110,13 +106,13 @@ function Home() {
           </div>
         </div>
       </section>
-      {/* treding section // will be chnaged  */}
-      <Items1></Items1>
 
-      {/* elevate */}
+      {/* Trending Section */}
+      <Items1 items={itemsGroup[1]} />
+
+      {/* Elevate */}
       <section className="w-full py-20 px-6 bg-white">
         <div className="flex flex-col md:flex-row justify-evenly items-center max-w-7xl mx-auto">
-          {/* Text */}
           <div className="flex flex-col items-center md:items-center gap-4 text-center md:text-left max-w-md">
             <p className="capitalize text-2xl font-medium">
               the summer collection
@@ -129,8 +125,6 @@ function Home() {
               shop eres
             </a>
           </div>
-
-          {/* Image */}
           <div className="w-full max-w-xl mt-8 md:mt-0">
             <img
               src="/images/elevate.webp"
@@ -140,14 +134,13 @@ function Home() {
           </div>
         </div>
       </section>
-      {/* information section */}
+
       <section>
-        <InfoSection></InfoSection>
+        <InfoSection />
       </section>
       <section>
-        <PersonalInfo></PersonalInfo>
+        <PersonalInfo />
       </section>
-      {/* Footer */}
       <FooterBar />
     </section>
   );
