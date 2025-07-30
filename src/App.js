@@ -12,12 +12,14 @@ import CheckoutItem from "./components/checkout/checkout";
 import SignIn from "./components/loginDetails/signin";
 import Login from "./components/loginDetails/login";
 import ItemsContent from "./components/checkout/cartcontent";
+import Index from "./pages";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home></Home>}> </Route>
+        <Route path="/" element={<Index></Index>}></Route>
+        <Route path="/women" element={<Home></Home>}> </Route>
         <Route path="/header" element={<Header></Header>}></Route>
         <Route path="/footer" element={<FooterBar></FooterBar>}></Route>
         <Route path="/nav" element={<NavBar></NavBar>}></Route>

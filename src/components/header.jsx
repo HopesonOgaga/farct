@@ -14,7 +14,7 @@ export default function Header() {
           <ul className="flex gap-6 text-base capitalize tracking-wide">
             <li>
               <a
-                href="/"
+                href="/women"
                 className="hover:text-green-600 transition-colors"
               >
                 Womens Wear

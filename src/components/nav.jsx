@@ -121,7 +121,7 @@ export default function NavBar() {
 
         {/* Main Nav Categories */}
         <div className="flex justify-around p-4 font-semibold capitalize border-b">
-          <Link to="/">
+          <Link to="/women">
             <nav>
               <a href="#" className="active:underline">
                 Womenwear
